@@ -40,7 +40,7 @@ a {
   align-items: center;
   justify-content: space-between;
   border: 1px solid red;
-  padding: 0 1.5rem;
+  padding: 0 1.25rem;
 }
 
 .menu-list {
@@ -81,7 +81,7 @@ a {
 }
 
 .btn {
-  width: 161px;
+  width: 160px;
   height: 45px;
   background: linear-gradient(90deg, #20e755 0%, rgba(43, 183, 218, 0.74) 100%);
   border-radius: 50px;
@@ -114,7 +114,7 @@ a {
 
 .hero-intro {
   border: 1px solid red;
-  padding: 0 1.5rem;
+  padding: 0 1.25rem;
   grid-column: 2 / 6;
   width: 500px;
 }
@@ -139,4 +139,73 @@ a {
 
 .hero-img img {
   transform: translate3d(140px, 30px, 0);
+}
+
+.section-services {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.25rem;
+  padding: 5rem 0;
+  background-color: hsl(220, 16%, 96%);
+}
+
+.services-info {
+  border: 1px solid red;
+
+  grid-column: 2 / 9;
+  max-width: 680px;
+  grid-row: 1;
+  padding: 1.25rem;
+}
+
+.services-info h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: hsl(233, 26%, 24%);
+}
+
+.services-info p {
+  color: hsl(233, 8%, 62%);
+  line-height: 1.75rem;
+}
+
+.services-card-container {
+  border: 1px solid red;
+  grid-column: 2 / 12;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem;
+}
+
+.services-card {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 250px;
+}
+
+.services-card h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: hsl(233, 26%, 24%);
+}
+
+.services-card p {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: hsl(233, 8%, 62%);
+  text-align: left;
+}
+
+.services-card-image {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 2rem;
 }
