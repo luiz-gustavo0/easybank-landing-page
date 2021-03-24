@@ -56,6 +56,7 @@ a {
   padding: 0.5rem;
   margin: 0 0.5rem;
   position: relative;
+  transition: 0.3s ease;
 }
 
 .menu-list li a:hover,
@@ -72,7 +73,6 @@ a {
   position: absolute;
   left: 4px;
   top: 58px;
-  transition: 0.7s;
 }
 
 .menu-list li a:hover::after,
@@ -90,7 +90,7 @@ a {
   color: hsl(0, 0%, 100%);
   font-weight: 400;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .btn:hover,
@@ -285,4 +285,93 @@ a {
   font-size: 0.875rem;
   line-height: 1.125rem;
   color: hsl(233, 8%, 62%);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: hsl(233, 26%, 24%);
+  padding: 3rem 0 0.5rem;
+  align-items: center;
+}
+
+.footer-container {
+  border: 1px solid red;
+
+  grid-column: 2 / 12;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.footer-content-link svg {
+  margin-bottom: 3rem;
+}
+
+.footer-content-link svg > g > path {
+  fill: hsl(0, 0%, 100%);
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-link a {
+  height: 22px;
+}
+
+.social-link a svg path {
+  transition: 0.2s ease;
+}
+
+.social-link a svg path:hover {
+  fill: hsl(136, 65%, 51%);
+}
+
+.mapa-site {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.mapa-site li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.mapa-site li:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.mapa-site li a {
+  color: hsl(220, 16%, 96%);
+  transition: 0.3s;
+}
+
+.mapa-site li a:hover,
+.mapa-site li a:focus {
+  color: hsl(136, 65%, 51%);
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.copy .btn {
+  margin-bottom: 1.5rem;
+}
+
+.copy p {
+  font-size: 0.875rem;
+  color: hsl(220, 16%, 96%);
+}
+
+.attribution {
+  grid-row: 2;
+  grid-column: 2 / 12;
+  margin-top: 2rem;
 }
