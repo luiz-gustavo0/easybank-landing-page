@@ -72,7 +72,7 @@ a {
   position: absolute;
   left: 4px;
   top: 58px;
-  transition: 0.7s ease-in-out;
+  transition: 0.7s;
 }
 
 .menu-list li a:hover::after,
@@ -90,7 +90,7 @@ a {
   color: hsl(0, 0%, 100%);
   font-weight: 400;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
 .btn:hover,
@@ -182,10 +182,7 @@ a {
 }
 
 .services-card {
-  /* border: 1px solid blue; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  border: 1px solid blue;
   max-width: 250px;
 }
 
@@ -208,4 +205,84 @@ a {
   width: 70px;
   height: 70px;
   margin-bottom: 2rem;
+}
+
+.section-articles {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: hsl(0, 0%, 98%);
+  padding: 5rem 0;
+}
+
+.section-articles h2 {
+  border: 1px solid red;
+
+  grid-column: 2 / 8;
+  grid-row: 1;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  padding-left: 1.5rem;
+  margin-bottom: 3rem;
+  color: hsl(233, 26%, 24%);
+}
+
+.articles-container {
+  border: 1px solid red;
+
+  grid-column: 2 / 12;
+  grid-row: 2;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 1.25rem;
+}
+
+.article-card {
+  /* border: 1px solid blue; */
+  border-radius: 0.5rem;
+  max-width: 250px;
+  background: hsl(0, 0%, 100%);
+}
+
+.article-card img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.25rem 1.5rem;
+}
+
+.card-content small {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: hsl(233, 8%, 62%);
+  margin: 0.5rem 0rem 1rem;
+}
+
+.card-content h3 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0.875rem;
+}
+
+.card-content h3 a {
+  color: hsl(233, 26%, 24%);
+  transition: 0.3s;
+}
+
+.card-content h3 a:hover,
+.card-content h3 a:focus {
+  color: hsl(136, 65%, 51%);
+}
+
+.card-content p {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: hsl(233, 8%, 62%);
 }
