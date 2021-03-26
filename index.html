@@ -34,9 +34,12 @@
   <!-- color: hsl(228, 45%, 44%); -->
 
   <body>
-    <header class="header">
-      <div class="container">
+    <header class="header container">
+      <div class="header-content">
         <div class="logo"><img src="./images/logo.svg" alt="Logo" /></div>
+        <button class="btn-mobile">
+          <img src="./images/icon-hamburger.svg" alt="" />
+        </button>
         <nav class="menu">
           <ul class="menu-list">
             <li><a href="#"> Home</a></li>
@@ -49,7 +52,7 @@
         <button class="btn">Request Invite</button>
       </div>
     </header>
-    <section class="hero">
+    <section class="hero container">
       <!-- <div class="hero-container"> -->
       <div class="hero-intro">
         <h1>Next generation digital banking</h1>
@@ -63,9 +66,10 @@
       <div class="hero-img">
         <img src="./images/image-mockups.png" alt="Imagens de celulares" />
       </div>
+
       <!-- </div> -->
     </section>
-    <section class="section-services">
+    <section class="section-services container">
       <div class="services-info">
         <h2>Why choose Easybank?</h2>
         <p>
@@ -116,7 +120,7 @@
         </div>
       </div>
     </section>
-    <section class="section-articles">
+    <section class="section-articles container">
       <h2>Latest Articles</h2>
       <div class="articles-container">
         <div class="article-card">
@@ -167,8 +171,8 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="footer-container">
+    <footer class="footer container">
+      <div class="footer-content">
         <div class="footer-content-link">
           <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20">
             <defs>
@@ -250,5 +254,6 @@
         >. Coded by <a href="#">Luiz Gustavo Santos</a>.
       </div>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>
