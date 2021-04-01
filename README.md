@@ -19,7 +19,7 @@ $ git clone git@github.com:luiz-gustavo0/easybank-landing-page.git
 ### Entrar no diretorio
 
 ```
-cd app-dogs-react
+cd easybank-landing-page
 ```
 
 ## Author
